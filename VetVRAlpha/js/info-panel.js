@@ -10,19 +10,19 @@ AFRAME.registerComponent('info-panel', {
 
     this.movieInfo = {
       karigurashiButton: {
-        title: 'The Heart of A Dog',
+        title: 'Normal and Abnormal Heart of A Dog',
         imgEl: document.querySelector('#karigurashiMovieImage'),
         description: 'Cardiac diseases we commonly see usually involve damage to the heart valves or enlargement/dilation of the heart due to weakening of the muscle.  These diseases are progressive and are due to degeneration of the heart.  There is often a genetic component as certain breeds at more at risk.'
       },
       kazetachinuButton: {
-        title: 'The Heart of a Cat',
+        title: 'The Normal Heart of a Dog',
         imgEl: document.querySelector('#kazetachinuMovieImage'),
-        description: 'A cats heart has four chambers. The two upper chambers are called the atrium (plural atria), and the lower chambers are called the ventricles. Additionally, the heart has a right and left side, each containing one atrium and one ventricle.'
+        description: 'A (abnormal) Dogs heart has four chambers. The two upper chambers are called the atrium (plural atria), and the lower chambers are called the ventricles. Additionally, the heart has a right and left side, each containing one atrium and one ventricle.'
       },
       ponyoButton: {
-        title: 'The Heart of a Pig',
+        title: 'The Abnormal Heart of a Dog',
         imgEl: document.querySelector('#ponyoMovieImage'),
-        description: 'If some pet pigs do not have access to exercise areas with abrasive surfaces such as gravel or stones, and constantly stand in soft or wet ground, hoof growth can become excessive. Some simple routine paring may be attempted without sedation on small, cooperative patients, but for more severe cases, most pigs will be required to be sedated. Most overgrown hooves can be managed with a sheep foot shear, lighter cattle toe clipper and a rasp. Toe and dew claw overgrowth are commonly encountered and easily rectified.'
+        description: 'If some pet dogs do not have access to exercise areas with abrasive surfaces such as gravel or stones, and constantly stand in soft or wet ground, (Holder text) hoof growth can become excessive. Some simple routine paring may be attempted without sedation on small, cooperative patients, but for more severe cases, most ///Dogs/// will be required to be sedated. Most overgrown hooves can be managed with a sheep foot shear, lighter cattle toe clipper and a rasp. Toe and dew claw overgrowth are commonly encountered and easily rectified.'
       }
     };
 
