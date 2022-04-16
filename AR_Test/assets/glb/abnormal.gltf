@@ -1,0 +1,253 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 40299,
+      "max": [
+        37.765785217285156,
+        195.9580078125,
+        230.6812286376953
+      ],
+      "min": [
+        -32.25324630737305,
+        56.66497802734375,
+        157.51766967773438
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 483588,
+      "componentType": 5126,
+      "count": 40299,
+      "max": [
+        0.9999967217445374,
+        0.9999846816062927,
+        0.999972403049469
+      ],
+      "min": [
+        -0.9999415874481201,
+        -0.9998518824577332,
+        -0.9999722242355347
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 40299,
+      "max": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        1.0,
+        0.0,
+        0.0313725508749485,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 244518,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 967176,
+      "componentType": 5126,
+      "count": 622,
+      "max": [
+        23.303936004638672,
+        125.33668518066406,
+        215.5572052001953
+      ],
+      "min": [
+        -18.014738082885742,
+        66.92806243896484,
+        184.68603515625
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 974640,
+      "componentType": 5126,
+      "count": 622,
+      "max": [
+        0.9976558089256287,
+        0.9993047118186951,
+        0.999972403049469
+      ],
+      "min": [
+        -0.9857708215713501,
+        -0.9797593355178833,
+        -0.9949594140052795
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 644784,
+      "componentType": 5126,
+      "count": 622,
+      "max": [
+        1.0,
+        0.003921568859368563,
+        0.03529411926865578,
+        1.0
+      ],
+      "min": [
+        1.0,
+        0.0,
+        0.0313725508749485,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 978072,
+      "componentType": 5125,
+      "count": 2820,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "atugman (https://sketchfab.com/atugman)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/abnormal-canine-heart-e5c53b7c6a3a4fa8a73892d05a5a4117",
+      "title": "Abnormal Canine Heart"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 989352,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 982104,
+      "byteOffset": 989352,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 654736,
+      "byteOffset": 1971456,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2626192,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 2,
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "COLOR_0": 6,
+            "NORMAL": 5,
+            "POSITION": 4
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        -0.2038145363330841,
+        0.007854594849050262,
+        -0.9789780378341675,
+        0.0,
+        -0.978988766670227,
+        -0.008145856671035335,
+        0.20375141501426697,
+        0.0,
+        -0.0063742296770215034,
+        0.9999359846115112,
+        0.00934980344027303,
+        0.0,
+        128.21279907226563,
+        1.0196933746338226,
+        -151.16409301757813,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        3
+      ],
+      "name": "abnormal_heart_clean_colored.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

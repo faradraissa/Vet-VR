@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hello, world!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <script type="module" 
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+</head>
+<body>
+  <model-viewer id="toggle-model" 
+                src="assets/glb/cube.glb" 
+                alt="A 3D model" 
+                shadow-intensity="1.5" 
+                bounds="tight" 
+                camera-controls 
+                auto-rotate
+                width="400px" 
+                height="400px"
+                autoplay>
+ </model-viewer>
+<script>
+    const models = ['cube.glb', 'cyl.glb', 'hex.glb', 'sphere.glb', 'aaa.glb'];
+    const toggleModel = document.querySelector('#toggle-model');
+    let j = 0;
+    setInterval(() => toggleModel.setAttribute('src', `assets/glb/${models[j++ % 5]}`), 2000);
+</script>
+    
+<style>
+  model-viewer {
+    height: 640px;
+    width: 360px;
+    background-color: powderblue;
+    }  
+</style>  
+</body>
+</html>

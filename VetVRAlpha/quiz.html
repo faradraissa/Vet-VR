@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <p>&nbsp;</p>
+<p class="question"> Q.1 This is not a application layer protocol ? </p>
+<ul class="answers">
+
+ <label> A) FTP </label> <br>
+ <label> B) SMTP </label> <br>
+ <label> C) UDP  </label> <br>
+ <label> D) TCP </label> <br>
+
+</ul>
+  
+<style>
+#q1more {display: none;}
+</style>
+
+<span id="q1dots"></span>
+<span id="q1more">
+ANSWER= (D) TCP <br>
+
+  </span>
+  <br>
+
+<button id="q1mybtn" onclick="q1function()">Check Answer </button>
+
+<script>
+function q1function() {
+var q1dots = document.getElementById("q1dots");
+var q1moreText = document.getElementById("q1more");
+var q1btnText = document.getElementById("q1mybtn");
+
+if (q1dots.style.display === "none") {
+q1dots.style.display = "inline";
+q1btnText.innerHTML = "Check Answer";
+q1moreText.style.display = "none";
+}
+else {
+q1dots.style.display = "none";
+q1btnText.innerHTML = "Hide Answer";
+q1moreText.style.display = "inline";
+}
+}
+</script>
+
+</body>
+</html>
