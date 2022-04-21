@@ -21,7 +21,7 @@
     <style>
         model-viewer{
             margin-top: -50px;
-            margin-left: 250px;
+            margin-left: 0px;
             height: 800px;
             width: 800px;
         }    
@@ -34,39 +34,39 @@
     <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
       <ul class="nav flex-column text-white w-100">
         <a href="index.html" class="nav-link h3 text-white my-2">
-          VET VR
+          VET AR
         </a>
         <li class="nav-link">
+          <i class="fas fa-solid fa fa-home"></i>
+            <span class="mx-2"><a href="section1.html">Main Categories</a></span>
+        </li>
+        <li class="nav-link">
           <i class="fas fa-solid fa-heart"></i>
-            <span class="mx-2"><a href="section1.html">Heart / Vascular</a></span>
+            <span class="mx-2"><a href="section2.html">Heart<br> Vascular</a></span>
         </li>
         <li class="nav-link">
           <i class="fas fa-solid fa-bone"></i>
-          <span class="mx-2"><a href="section2.html">haartVASC</a></span>
+          <span class="mx-2"><a href="section3.html">Canine<br>Skeletal</a></span>
         </li>
         <li class="nav-link">
-          <i class="fas fa-solid fa-virus"></i>
-          <span class="mx-2"><a href="section3.html">Nervous</a></span>
+          <i class="fas fa-solid fa-lungs"></i>
+          <span class="mx-2"><a href="section4.html">Canine<br>Respiratory</a></span>
         </li>
+        <li class="nav-link">
+          <i class="fas fa-drumstick-bite"></i>
+          <span class="mx-2"><a href="section5.html">Canine<br>Digestive</a></span>
+        </li>  
         <li class="nav-link">
           <i class="fas fa-dna"></i>
-          <span class="mx-2"><a href="section4.html">Muscular</a></span>
-        </li>
-           <li class="nav-link">
-          <i class="fas fa-solid fa-lungs"></i>
-          <span class="mx-2"><a href="section5.html">Respiratory</a></span>
-        </li>
-           <li class="nav-link">
-          <i class="fas fa-drumstick-bite"></i>
-          <span class="mx-2"><a href="section6.html">Digestive</a></span>
-        </li>
-           <li class="nav-link">
+          <span class="mx-2"><a href="section6.html">Canine<br>Muscular</a></span>
+        </li>          
+        <li class="nav-link">
           <i class="fas fa-solid fa-briefcase-medical"></i>
-          <span class="mx-2"><a href="section7.html">Urinary</a></span>
+          <span class="mx-2"><a href="section7.html">Canine<br>Urinary</a></span>
         </li>
            <li class="nav-link">
           <i class="fab fa-sticker-mule"></i>
-          <span class="mx-2"><a href="section8.html">Reproductive</a></span>
+          <span class="mx-2"><a href="section8.html">Canine<br>Reproductive</a></span>
         </li>
            
            <li class="nav-link">
@@ -89,7 +89,52 @@
         <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
       </nav>
       <!--End Top Nav --> 
-        <model-viewer src="gltf//Canine_healty_heart.glb" camera-controls> </model-viewer> 
+        <h1>Canine Cardio Vascular</h1>
+        
+        <model-viewer bounds="tight" 
+                  enable-pan src="gltf/DogAnatomy.glb" 
+                  ar 
+                  ar-modes="scene-viewer webxr quick-look" 
+                  camera-controls 
+                  environment-image="neutral" 
+                  poster="poster.webp" 
+                  shadow-intensity="1">
+                    <button class="Hotspot" slot="hotspot-1" 
+                            data-position="-0.09295081250502202m 0.13252859151916996m 0.16065483150162457m" 
+                            data-normal="-0.9839717514251967m 0.15668875731342646m 0.08513651231290258m" 
+                            data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Lungs</div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-2" 
+                            data-position="-0.09529645383603302m 0.11555530505525147m 0.04458931935276608m" 
+                            data-normal="-0.9990257263039736m -0.00725334472405575m 0.04353145039086421m" 
+                            data-visibility-attribute="visible"
+                            style="background-color: red">
+                        <div class="HotspotAnnotation">
+                        <a style="color: white" style="text-decoration:none" href="switch.html">Heart</a></div>
+                    
+                    </button>
+                    <button class="Hotspot" slot="hotspot-3" 
+                            data-position="-0.06385763045437542m 0.13945076075004287m -0.10911576395966788m" 
+                            data-normal="-0.8479738386356618m 0.5187737324466075m -0.10869307021570594m" 
+                            data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Intestine</div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-4" 
+                            data-position="-0.08720124284465625m 0.18521003537239072m -0.27334145971242874m" 
+                            data-normal="-0.7314753827445244m 0.28855117766023036m 0.6178041617775376m" 
+                            data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">Skeletal</div>
+                    </button>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+            
+    
+        </model-viewer> 
         
         <h2><b>Welcome to  the Index Section </b></h2>
         <p>Choose from familiar headings on the side bar to bring you through to your preferred research area. Try our revision cards when you're ready. <br>
