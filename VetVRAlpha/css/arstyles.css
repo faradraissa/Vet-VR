@@ -1,0 +1,32 @@
+.button {
+      background-color: #0000FF; 
+      border: none;
+      color: white;
+      padding: 7px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      border: 2px solid rgba(9, 148, 28, 0.541);
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);      
+    }
+    .wrap {
+    border: solid 1px #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #output {
+    display: inline-block;
+    top: 4px;
+    position: relative;
+    border: dotted 1px #ccc;
+    padding: 2px;
+  }
+  
+  .button {
+    border: solid 2px #ccc;
+  }
