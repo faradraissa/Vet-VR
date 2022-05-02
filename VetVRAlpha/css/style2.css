@@ -75,3 +75,16 @@ a:active {
   border-radius: 2rem;
   padding: 2px 20px;
 }
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #000000;    
+    padding: 0.2em;
+    outline: none;
+    background: #b2b2b2;
+    color: white;
+    cursor: pointer;
+    }
+ 
