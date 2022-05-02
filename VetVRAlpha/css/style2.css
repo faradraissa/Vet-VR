@@ -77,13 +77,13 @@ a:active {
 }
 
 button {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
-    border: 1px solid #000000;    
-    padding: 0.2em;
+    border: 1px solid #FC4A1A;    
+    padding: 0.0em;
     outline: none;
-    background: #b2b2b2;
+    background: #1abc9c;
     color: white;
     cursor: pointer;
     }
@@ -95,10 +95,10 @@ a:hover:after {
   font: 18px verdana;
   top: 150%;
   left: 0;
-  background: #ace;
-  color: black;
+  background: #1abc9c;
+  color: white;
   box-sizing: border-box;
-  border: 1px solid gray;
+  border: 2px solid #FC4A1A;
   border-radius: 20%;
   padding: 3px;
 }
