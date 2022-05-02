@@ -1,211 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Hello, world!</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-    <!-- Import the component -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> 
- <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>    
-</head>
-<body>
-<model-viewer src="assets/glb/Canine_healty_heart.glb" 
-              scale="0.05 0.05 0.05"
-              shadow-intensity="2"
-              magic-leap
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              camera-controls
-              auto-rotate
-              alt="A 3D cube">
-  
-  <button slot="ar-button" id="ar-button">
-    View in your space
-  </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      
+    <!-- BOX ICONS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
+      
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+      
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style2.css" />
+      
+    <!-- model viewer -->  
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer{
+            margin-top: -50px;
+            margin-left: 0px;
+            height: 800px;
+            width: 800px;
+        }
+    </style>
+      
+  </head>
 
-  <div id="ar-prompt">
-    <img src="assets/icons/hand.png">
-  </div>
-    
-  <button id="ar-failure">
-    AR is not tracking!
-  </button>
+  <body>
+    <!-- Side-Nav -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+      <ul class="nav flex-column text-white w-100">
+        <a href="index.html" class="nav-link h3 text-white my-2">
+          VET AR
+        </a>
+        <li class="nav-link"  style="background-color: #1abc9c;">
+          <i class="fas fa-solid fa fa-home"></i>
+            <span class="mx-2"><a href="section1.html">Main Categories</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-heart"></i>
+            <span class="mx-2"><a href="section2.html">Canine<br>Cardio-Vascular</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-bone"></i>
+          <span class="mx-2"><a href="section3.html">Canine<br>Skeletal</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-lungs"></i>
+          <span class="mx-2"><a href="section4.html">Canine<br>Respiratory</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-drumstick-bite"></i>
+          <span class="mx-2"><a href="section5.html">Canine<br>Digestive</a></span>
+        </li>  
+        <li class="nav-link">
+          <i class="fas fa-dna"></i>
+          <span class="mx-2"><a href="section6.html">Canine<br>Muscular</a></span>
+        </li>          
+        <li class="nav-link">
+          <i class="fas fa-solid fa-briefcase-medical"></i>
+          <span class="mx-2"><a href="section7.html">Canine<br>Urinary</a></span>
+        </li>
+           <li class="nav-link">
+          <i class="fab fa-sticker-mule"></i>
+          <span class="mx-2"><a href="section8.html">Canine<br>Reproductive</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-file-medical"></i>
+          <span class="mx-2"><a href="cards.html">Revision Cards</a></span>
+        </li>
+        <li >
+          <span ><hr style="height:5px; background-color:#ffffff;"></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-chalkboard-teacher"></i>
+          <span class="mx-2"><a href="arButtons.html">Teacher Section</a></span>
+        </li>  
+      </ul>
 
-  <div class="slider">
-    <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Canine_healty_heart')" 
-              style="background-image: url('assets/icons/NormalHSym.png');">
-      </button>
-        
-      <button class="slide" onclick="switchSrc(this, 'Canine_Heart_Abnormal')" 
-              style="background-image: url('assets/icons/AbnormalSym.png');">
-      </button>
-        
-      <button class="slide" onclick="switchSrc(this, 'CanineNormalAbnormalHeartComp')" 
-              style="background-image: url('assets/icons/HearCompSym.png');">
-      </button>
-        
-      <button class="slide" onclick="switchSrc(this, 'Doglung')" 
-              style="background-image: url('assets/icons/LungsSym.png');">
-      </button>
-        
-      <button class="slide" onclick="switchSrc(this, 'CanineSkeletal')" 
-              style="background-image: url('assets/icons/SkeletonSym.png');">    
-      </button>        
+      <span href="#" class="nav-link h4 w-100 mb-5">
+        <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
+        <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
+        <a href=""><i class="bx bxl-facebook text-white"></i></a>
+      </span>
     </div>
-  </div>
-</model-viewer>
-    
-  
 
-<script type="module">
-  const modelViewer = document.querySelector("model-viewer");
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+      <!-- Top Nav -->
+      <nav class="navbar top-navbar navbar-light bg-light px-5">
+        <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+      </nav>
+      <!--End Top Nav --> 
 
-  window.switchSrc = (element, name) => {
-    const base = "assets/glb/" + name;
-    modelViewer.src = base + '.glb';
-    modelViewer.poster = base + '.png';
-    const slides = document.querySelectorAll(".slide");
-    slides.forEach((element) => {element.classList.remove("selected");});
-    element.classList.add("selected");
-  };
+        
+    <!-- Write your comments here -->
+        <!--<h1>Main CategoriesDeleting this</h1> -->
+        <h1><b>Welcome to  the Index Section </b></h1>
+        <p>Choose from familiar headings on the side bar to bring you through to your preferred research area.<br> 
+            Try our revision cards when you're ready. I will recolour this <br>
 
-  document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
-    // Keep slider interactions from affecting the XR scene.
-    ev.preventDefault();
-  });
-</script>
+        <h1>Main Categories</h1>
+        <h2><b>What is Lorem Ipsum?</b></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        
+        <model-viewer bounds="tight" 
+                  enable-pan src="assets/glb/DogAnatomy.glb" 
+                  ar 
+                  ar-modes="scene-viewer webxr quick-look" 
+                  camera-controls 
+                  environment-image="neutral" 
+                  poster="poster.webp" 
+                  shadow-intensity="1">
+                    <button class="Hotspot" slot="hotspot-1" 
+                            data-position="-0.09295081250502202m 0.13252859151916996m 0.16065483150162457m" 
+                            data-normal="-0.9839717514251967m 0.15668875731342646m 0.08513651231290258m" 
+                            data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">
+                            <a style="color: #b2b2b2 "style="text-decoration:none" href="#" data-title="Lungs">L</a>
+                        </div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-2" 
+                            data-position="-0.09529645383603302m 0.11555530505525147m 0.04458931935276608m" 
+                            data-normal="-0.9990257263039736m -0.00725334472405575m 0.04353145039086421m" 
+                            data-visibility-attribute="visible"
+                            style="background-color: #1abc9c">
+                        <div class="HotspotAnnotation">
+                        <a style="color: #1abc9c" style="text-decoration:none" href="switch.html" data-title="Heart of a Dog">H</a></div>                    
+                    </button>
+                    <button class="Hotspot" slot="hotspot-3" 
+                            data-position="-0.06385763045437542m 0.13945076075004287m -0.10911576395966788m" 
+                            data-normal="-0.8479738386356618m 0.5187737324466075m -0.10869307021570594m" 
+                            data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">
+                        <a style="color: #b2b2b2 "style="text-decoration:none" href="#" data-title="Intestine">I</a>
+                        </div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-4" 
+                            data-position="-0.08720124284465625m 0.18521003537239072m -0.27334145971242874m" 
+                            data-normal="-0.7314753827445244m 0.28855117766023036m 0.6178041617775376m" 
+                            data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation">
+                            <a style="color: #b2b2b2 "style="text-decoration:none" href="#" data-title="Skeletal">S</a></div>
+                    </button>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>   
+        </model-viewer> 
+        
+        
+        
+        <h2><b>What is Lorem Ipsum?</b></h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry/// Deleting
+        </p>
+        
+    </div>
 
-<style>
-  /* This keeps child nodes hidden while the element loads */
-  :not(:defined) > * {
-    display: none;
-  }
-
-  model-viewer {
-    background-color: #eee;
-    overflow-x: hidden;
-    --poster-color: #eee;
-    height: 768px;
-    width: 432px;
-  }
-
-  #ar-button {
-    background-image: url(assets/icons/bg.png);
-    background-repeat: no-repeat;
-    background-size: 5px 5px;
-    background-position: 12px 50%;
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    bottom: 132px;
-    padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
-    font-size: 14px;
-    color:#4285f4;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 18px;
-    border: 1px solid #DADCE0;
-  }
-
-  #ar-button:active {
-    background-color: #E8EAED;
-  }
-
-  #ar-button:focus {
-    outline: none;
-  }
-
-  #ar-button:focus-visible {
-    outline: 1px solid #4285f4;
-  }
-
-  @keyframes circle {
-    from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
-    to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
-  }
-
-  @keyframes elongate {
-    from { transform: translateX(100px); }
-    to   { transform: translateX(-100px); }
-  }
-
-  model-viewer > #ar-prompt {
-    position: absolute;
-    left: 50%;
-    bottom: 175px;
-    animation: elongate 2s infinite ease-in-out alternate;
-    display: none;
-  }
-
-  model-viewer[ar-status="session-started"] > #ar-prompt {
-    display: block;
-  }
-
-  model-viewer > #ar-prompt > img {
-    animation: circle 4s linear infinite;
-  }
-
-  model-viewer > #ar-failure {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 175px;
-    display: none;
-  }
-
-  model-viewer[ar-tracking="not-tracking"] > #ar-failure {
-    display: block;
-  }
-
-  .slider {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    position: absolute;
-    bottom: 16px;
-  }
-
-  .slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .slide {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 70px;
-    height: 70px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: none;
-    margin-right: 15px;
-    border-radius: 10px;
-    border: none;
-    display: flex;
-  }
-
-  .slide.selected {
-    border: 2px solid #4285f4;
-  }
-
-  .slide:focus {
-    outline: none;
-  }
-
-  .slide:focus-visible {
-    outline: 1px solid #4285f4;
-  }
-
-</style>
-    
-</body>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script>
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+      });
+    </script>
+  </body>
 </html>

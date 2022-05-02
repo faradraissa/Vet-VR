@@ -87,4 +87,18 @@ button {
     color: white;
     cursor: pointer;
     }
- 
+
+
+a:hover:after {
+  content: attr(data-title);
+  position: absolute;
+  font: 18px verdana;
+  top: 150%;
+  left: 0;
+  background: #ace;
+  color: black;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 20%;
+  padding: 3px;
+}
