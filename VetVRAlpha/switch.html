@@ -7,9 +7,11 @@
   <meta name="description" content="" />
     <!-- Import the component -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> 
- <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>    
+ <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> 
 </head>
 <body>
+<h1>What is Lorem Ipsum?</h1>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
 <model-viewer src="assets/glb/Canine_healty_heart.glb" 
               scale="0.05 0.05 0.05"
               shadow-intensity="2"
@@ -31,13 +33,13 @@
   <button id="ar-failure">
     AR is not tracking!
   </button>
-
+    
   <div class="slider">
-    <div class="slides">
+    <div class="slides">      
       <button class="slide selected" onclick="switchSrc(this, 'Canine_healty_heart')" 
-              style="background-image: url('assets/icons/NormalHSym.png');">
+              style="background-image: url('assets/icons/NormalHSym.png');">         
       </button>
-        
+      
       <button class="slide" onclick="switchSrc(this, 'Canine_Heart_Abnormal')" 
               style="background-image: url('assets/icons/AbnormalSym.png');">
       </button>
@@ -49,15 +51,57 @@
       <button class="slide" onclick="switchSrc(this, 'Doglung')" 
               style="background-image: url('assets/icons/LungsSym.png');">
       </button>
-        
-      <button class="slide" onclick="switchSrc(this, 'CanineSkeletal')" 
-              style="background-image: url('assets/icons/SkeletonSym.png');">    
-      </button>        
-    </div>
+      <button class="slide" onclick="switchSrc(this, 'Skeletal')" 
+              style="background-image: url('assets/icons/SkeletonSym.png');">   
+      </button>
+    </div>    
   </div>
 </model-viewer>
-    
-  
+
+<audio id="AudioA" hidden src="Sound/Dog Heart_Normal.wav" type="audio/mpeg"></audio>
+<img id="playAudioA" src="assets/icons/NormalHSym.png"  width="70" height="70">
+  <script type="text/javascript">
+    document.getElementById("playAudioA").addEventListener
+    ("click", function()
+        {var audio = document.getElementById('AudioA');
+            if(this.className == 'is-playing')
+                {
+                this.className = "";
+                this.innerHTML = "Play"
+                audio.pause();
+                }
+            else
+                {
+                this.className = "is-playing";
+                this.innerHTML = "Pause";
+                audio.play();
+                }
+        }
+    );
+  </script> 
+   
+        
+ <audio id="AudioB" hidden src="Sound/Abnormal_Stenotic Murmur.wav" type="audio/mpeg"></audio>
+ <img id="playAudioB" src="assets/icons/AbnormalSym.png"  width="70" height="70">
+   <script type="text/javascript">
+    document.getElementById("playAudioB").addEventListener
+    ("click", function()
+        {var audio = document.getElementById('AudioB');
+            if(this.className == 'is-playing')
+                {
+                this.className = "";
+                this.innerHTML = "Play"
+                audio.pause();
+                }
+            else
+                {
+                this.className = "is-playing";
+                this.innerHTML = "Pause";
+                audio.play();
+                }
+        }
+    );
+  </script> 
 
 <script type="module">
   const modelViewer = document.querySelector("model-viewer");
@@ -74,8 +118,9 @@
   document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
     // Keep slider interactions from affecting the XR scene.
     ev.preventDefault();
-  });
+  }); 
 </script>
+
 
 <style>
   /* This keeps child nodes hidden while the element loads */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <style>
+        model-viewer{
+            margin-top: 0px;
+            margin-left: 0px;
+            height: 800px;
+            width: 800px;
+        }
+    </style>
+    <title></title>
+</head>
+
+<body>
+<model-viewer id="modelViewer"
+              bounds="tight" 
+              enable-pan src="assets/glb/HeartCowDiss.glb" 
+              ar ar-modes="webxr scene-viewer quick-look" 
+              camera-controls environment-image="neutral" 
+              poster="poster.webp" 
+              shadow-intensity="1">
+            <button class="hotspotButton" slot="hotspot-one" 
+                    data-position="41.15479523190493m -11.752974312009613m 42.29410742310978m" 
+                    data-normal="-0.7233579596054454m 0.28748971252588384m 0.6277761762501278m" 
+                    data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">h1</div>
+            </button>
+            <div class="progress-bar hide" 
+                 slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            
+</model-viewer>
+    
+<script>
+        const modelViewer = document.querySelector("modelViewer");
+        hotspotButton.addEventListener('click', () => {
+          if (modelViewer.paused) {
+            modelViewer.play();
+          } else {
+            modelViewer.pause();
+          }
+        });
+</script>
+</body>
+</html>
+
+
+
