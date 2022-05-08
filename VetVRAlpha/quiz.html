@@ -1,20 +1,111 @@
 <!DOCTYPE html>
-<html lang="">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      
+    <!-- BOX ICONS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"/>
+      
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+      
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style2.css" />
+      
+    <!-- model viewer -->  
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer{
+            margin-top: -50px;
+            margin-left: 0px;
+            height: 800px;
+            width: 800px;
+        }
+    </style>
+      
+  </head>
 
-<body>
-    <p>&nbsp;</p>
-<p class="question"> Q.1 This is not a application layer protocol ? </p>
+  <body>
+    <!-- Side-Nav -->
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+      <ul class="nav flex-column text-white w-100">
+        <a href="index.html" class="nav-link h3 text-white my-2">
+          VET AR
+        </a>
+        <li class="nav-link">
+          <i class="fas fa-solid fa fa-home"></i>
+            <span class="mx-2"><a href="section1.html">Main Categories</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-heart"></i>
+            <span class="mx-2"><a href="section2.html">Canine<br>Cardio-Vascular</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-bone"></i>
+          <span class="mx-2"><a href="section3.html">Canine<br>Skeletal</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-lungs"></i>
+          <span class="mx-2"><a href="section4.html">Canine<br>Respiratory</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-drumstick-bite"></i>
+          <span class="mx-2"><a href="section5.html">Canine<br>Digestive</a></span>
+        </li>  
+        <li class="nav-link">
+          <i class="fas fa-dna"></i>
+          <span class="mx-2"><a href="section6.html">Canine<br>Muscular</a></span>
+        </li>          
+        <li class="nav-link">
+          <i class="fas fa-solid fa-briefcase-medical"></i>
+          <span class="mx-2"><a href="section7.html">Canine<br>Urinary</a></span>
+        </li>
+           <li class="nav-link" style="background-color: #1abc9c;">
+            <i class="fas fa-solid fa-question"></i>
+          <span class="mx-2"><a href="quiz.html">Quiz</a></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-file-medical"></i>
+          <span class="mx-2"><a href="cards.html">Revision Cards</a></span>
+        </li>
+        <li >
+          <span ><hr style="height:5px; background-color:#ffffff;"></span>
+        </li>
+        <li class="nav-link">
+          <i class="fas fa-solid fa-chalkboard-teacher"></i>
+          <span class="mx-2"><a href="arButtons.html">Teacher Section</a></span>
+        </li>  
+      </ul>
+
+      <span href="#" class="nav-link h4 w-100 mb-5">
+        <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
+        <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
+        <a href=""><i class="bx bxl-facebook text-white"></i></a>
+      </span>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+      <!-- Top Nav -->
+      <nav class="navbar top-navbar navbar-light bg-light px-5">
+        <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+      </nav>
+      <!--End Top Nav --> 
+<H1>Quiz</H1>
+    
+<!----------- Question----------> 
+<p>&nbsp;</p>
+<p class="question"> Q.1 What are dogs most closely related to? </p>
 <ul class="answers">
 
- <label> A) FTP </label> <br>
- <label> B) SMTP </label> <br>
- <label> C) UDP  </label> <br>
- <label> D) TCP </label> <br>
+ <label> A) Wolves </label> <br>
+ <label> B) Dingos </label> <br>
+ <label> C) Foxes  </label> <br>
+ <label> D) Giraffes </label> <br>
 
 </ul>
   
@@ -24,12 +115,12 @@
 
 <span id="q1dots"></span>
 <span id="q1more">
-ANSWER= (D) TCP <br>
+ANSWER= (A) Wolves <br>
 
   </span>
   <br>
 
-<button id="q1mybtn" onclick="q1function()">Check Answer </button>
+<button id="q1mybtn" onclick="q1function()">? </button>
 
 <script>
 function q1function() {
@@ -39,16 +130,218 @@ var q1btnText = document.getElementById("q1mybtn");
 
 if (q1dots.style.display === "none") {
 q1dots.style.display = "inline";
-q1btnText.innerHTML = "Check Answer";
+q1btnText.innerHTML = "Check";
 q1moreText.style.display = "none";
 }
 else {
 q1dots.style.display = "none";
-q1btnText.innerHTML = "Hide Answer";
+q1btnText.innerHTML = "Hide";
 q1moreText.style.display = "inline";
 }
 }
 </script>
 
+    
+<!----------- Question---------->     
+<p>&nbsp;</p>
+<p class="question"> Q.2 Akita, a dog, is a national treasure of which country? </p>
+<ul class="answers">
+
+ <label> A) China </label> <br>
+ <label> B) India </label> <br>
+ <label> C) France  </label> <br>
+ <label> D) Japan </label> <br>
+
+</ul>
+  
+<style>
+#q2more {display: none;}
+</style>
+
+<span id="q2dots"></span>
+<span id="q2more">
+ANSWER= (D) Japan <br>
+
+  </span>
+  <br>
+
+<button id="q2mybtn" onclick="q2function()">? </button>
+
+<script>
+function q2function() {
+var q2dots = document.getElementById("q2dots");
+var q2moreText = document.getElementById("q2more");
+var q2btnText = document.getElementById("q2mybtn");
+
+if (q2dots.style.display === "none") {
+q2dots.style.display = "inline";
+q2btnText.innerHTML = "Check Answer";
+q2moreText.style.display = "none";
+}
+else {
+q2dots.style.display = "none";
+q2btnText.innerHTML = "Hide Answer";
+q2moreText.style.display = "inline";
+}
+}
+</script>
+    
+
+<!----------- Question----------> 
+<p>&nbsp;</p>
+<p class="question"> Q.3 How many bones does a dog have in its spine? </p>
+<ul class="answers">
+
+ <label> A) 25 </label> <br>
+ <label> B) 26 </label> <br>
+ <label> C) 27  </label> <br>
+ <label> D) 28 </label> <br>
+
+</ul>
+  
+<style>
+#q3more {display: none;}
+</style>
+
+<span id="q3dots"></span>
+<span id="q3more">
+ANSWER= (C) 27 <br>
+
+  </span>
+  <br>
+
+<button id="q3mybtn" onclick="q3function()">? </button>
+
+<script>
+function q3function() {
+var q3dots = document.getElementById("q3dots");
+var q3moreText = document.getElementById("q3more");
+var q3btnText = document.getElementById("q3mybtn");
+
+if (q3dots.style.display === "none") {
+q3dots.style.display = "inline";
+q3btnText.innerHTML = "Check Answer";
+q3moreText.style.display = "none";
+}
+else {
+q3dots.style.display = "none";
+q3btnText.innerHTML = "Hide Answer";
+q3moreText.style.display = "inline";
+}
+}
+</script>
+
+
+        
+<!----------- Question----------> 
+<p>&nbsp;</p>
+<p class="question"> Q.4 What is a dog’s front leg called? </p>
+<ul class="answers">
+
+ <label> A) forelimb </label> <br>
+ <label> B) frontlimb </label> <br>
+ <label> C) frontleg  </label> <br>
+ <label> D) foretleg</label> <br>
+
+</ul>
+  
+<style>
+#q4more {display: none;}
+</style>
+
+<span id="q4dots"></span>
+<span id="q4more">
+ANSWER= (A) forelimb <br>
+
+  </span>
+  <br>
+
+<button id="q4mybtn" onclick="q4function()">? </button>
+
+<script>
+function q4function() {
+var q4dots = document.getElementById("q4dots");
+var q4moreText = document.getElementById("q4more");
+var q4btnText = document.getElementById("q4mybtn");
+
+if (q4dots.style.display === "none") {
+q4dots.style.display = "inline";
+q4btnText.innerHTML = "Check Answer";
+q4moreText.style.display = "none";
+}
+else {
+q4dots.style.display = "none";
+q4btnText.innerHTML = "Hide Answer";
+q4moreText.style.display = "inline";
+}
+}
+</script>
+
+    
+
+    
+<!----------- Question----------> 
+<p>&nbsp;</p>
+<p class="question"> Q.5 How many toes does a dog have? </p>
+<ul class="answers">
+
+ <label> A) 3 </label> <br>
+ <label> B) 4 </label> <br>
+ <label> C) 5  </label> <br>
+ <label> D) 6</label> <br>
+
+</ul>
+  
+<style>
+#q5more {display: none;}
+</style>
+
+<span id="q5dots"></span>
+<span id="q5more">
+ANSWER= (C) 5 <br>
+
+  </span>
+  <br>
+
+<button id="q5mybtn" onclick="q5function()">? </button>
+
+<script>
+function q5function() {
+var q5dots = document.getElementById("q5dots");
+var q5moreText = document.getElementById("q5more");
+var q5btnText = document.getElementById("q5mybtn");
+
+if (q5dots.style.display === "none") {
+q5dots.style.display = "inline";
+q5btnText.innerHTML = "Check Answer";
+q5moreText.style.display = "none";
+}
+else {
+q5dots.style.display = "none";
+q5btnText.innerHTML = "Hide Answer";
+q5moreText.style.display = "inline";
+}
+}
+</script>
+      </div>        
+        
+        <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script>
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+      });
+    </script>
+
+        
 </body>
 </html>
