@@ -1,6 +1,6 @@
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <link rel="stylesheet" href="css/arstyles.css">
@@ -22,29 +22,41 @@
                   gltf-model=”url(assets/glb/DogAnatomy.glb)”>
         </a-entity>
       </a-marker>
-      <a-entity camera></a-entity>
-</a-scene>
-
-    <script>        
-        document.getElementById("btn1").addEventListener("click", (e)=>{
-                    var el = document.querySelector('#entityID1');
-                    el.setAttribute("obj-model", 'obj:url(assets/glb/NormalHeart.obj); mtl:url(assets/glb/NormalHeart.mtl)');
-                    el.setAttribute("scale",'.1 .1 .1');
-                    })
     
-        document.getElementById("btn2").addEventListener("click", (e)=>{                    
-                    var el = document.querySelector('#entityID1');              
-                    el.setAttribute("obj-model", 'obj:url(assets/glb/AbnormalHeart.obj); mtl:url(assets/glb/AbnormalHeart.mtl)');
-                    el.setAttribute("scale",'.1 .1 .1');               
-                    })
+    
+    <a-marker preset="kanji"> 
+        <a-entity rotation="0 0 0" 
+                  scale=".3 .3 .3"
+                  animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+            <a-sphere position="3 0 0" color="mediumseagreen"></a-sphere>
+        </a-entity>
+    </a-marker>
+      <a-entity camera></a-entity>    
+    
+</a-scene>
+    
+    
 
-        document.getElementById("btn3").addEventListener("click", (e)=>{                    
-                    var el = document.querySelector('#entityID1');              
-                    el.setAttribute("obj-model", 'obj:url(assets/glb/heartComp.obj); mtl:url(assets/glb/heartComp.mtl)');
-                    el.setAttribute("scale",'.5 .5 .5');
-                    el.setAttribute("rotation",'-90 0 0');
-                    })
-    </script>  
+<script>        
+    document.getElementById("btn1").addEventListener("click", (e)=>{
+                var el = document.querySelector('#entityID1');
+                el.setAttribute("obj-model", 'obj:url(assets/glb/NormalHeart.obj); mtl:url(assets/glb/NormalHeart.mtl)');
+                el.setAttribute("scale",'.1 .1 .1');
+                })
+
+    document.getElementById("btn2").addEventListener("click", (e)=>{                    
+                var el = document.querySelector('#entityID1');              
+                el.setAttribute("obj-model", 'obj:url(assets/glb/AbnormalHeart.obj); mtl:url(assets/glb/AbnormalHeart.mtl)');
+                el.setAttribute("scale",'.1 .1 .1');               
+                })
+
+    document.getElementById("btn3").addEventListener("click", (e)=>{                    
+                var el = document.querySelector('#entityID1');              
+                el.setAttribute("obj-model", 'obj:url(assets/glb/heartComp.obj); mtl:url(assets/glb/heartComp.mtl)');
+                el.setAttribute("scale",'.5 .5 .5');
+                el.setAttribute("rotation",'-90 0 0');
+                })
+</script>  
   </body>
 </html>
 
