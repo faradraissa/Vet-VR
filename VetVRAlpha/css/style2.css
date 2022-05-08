@@ -25,11 +25,12 @@ body {
 }
 
 a:link {
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: none;
-        }
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /* unvisited link */
 a:link {
